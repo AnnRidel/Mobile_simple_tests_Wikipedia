@@ -27,8 +27,8 @@ public interface SelenoidConfig extends Config {
     String videoStorage();
 
     @Key("username")
-    String appiumServerUser();
+    String selenoidServerUser();
 
     @Key("password")
-    String appiumServerPassword();
+    String selenoidServerPassword();
 }

@@ -11,8 +11,8 @@ public class SelenoidHelper {
     public static URL getSelenoidServerUrl() {
         try {
             return new URL(String.format(selenoidConfig.selenoidServerUrl(),
-                    selenoidConfig.appiumServerUser(),
-                    selenoidConfig.appiumServerPassword()));
+                    selenoidConfig.selenoidServerUser(),
+                    selenoidConfig.selenoidServerPassword()));
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }

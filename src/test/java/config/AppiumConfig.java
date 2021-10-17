@@ -5,7 +5,7 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties",
-        "classpath:config/appium/appium.properties"
+        "classpath:config/appium.properties"
 })
 public interface AppiumConfig extends Config {
     @Key("appium.server.url")
