@@ -1,6 +1,11 @@
 package tests;
 
+import annotations.JiraIssue;
+import annotations.JiraIssues;
+import annotations.Tester;
 import io.appium.java_client.MobileBy;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -12,10 +17,16 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.appium.java_client.MobileBy.AccessibilityId;
 import static io.qameta.allure.Allure.step;
 
+@Owner("AKuznetsova")
+@DisplayName("MobileWikipediaTests")
+
 public class Tests extends TestBase {
 
     @Tag("selenide_android")
     @Test
+    @Feature("Onboarding Windows")
+    @Tester("AKuznetsova")
+    @JiraIssues({@JiraIssue("HOMEWORK-261")})
     @DisplayName("Check Onboarding Windows Test")
     void checkOnboardingWindowsTest() {
 
@@ -51,6 +62,9 @@ public class Tests extends TestBase {
 
     @Tag("selenide_android")
     @Test
+    @Feature("Searching tests")
+    @Tester("AKuznetsova")
+    @JiraIssues({@JiraIssue("HOMEWORK-261")})
     @DisplayName("Search on Wikipedia test")
     void wikiSearchTest() {
 
