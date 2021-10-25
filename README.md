@@ -23,19 +23,16 @@ The following technologies are used:
 * :white_check_mark: **Telegram** - messenger, in which notifications about test execution results are sent!  
 
 ### To run tests using Appium (default):
-
 ```
 gradle clean test -Ddevice.name=appium
 ```
 
 ### To run tests using Selenoid:
-
 ```
 gradle clean test -Ddevice.host=selenoid
 ```
 
 ### To run tests using BrowserStack:
-
 ```
 gradle clean test -Ddevice.host=browser_stack
 ```
@@ -44,3 +41,25 @@ gradle clean test -Ddevice.host=browser_stack
 ```
 allure serve build/allure-results
 ```
+
+### :gear: Running build in [Jenkins](https://jenkins.autotests.cloud/job/07-annrid-mobile/) with parameters:
+![image](https://github.com/AnnRidel/Data_examples/blob/master/resources/images/jenkins_mobile.png)
+
+### :chart_with_upwards_trend: Generated [Allure Report](https://jenkins.autotests.cloud/job/07-annrid-mobile/16/allure/) with tests execution results:
+![image](https://github.com/AnnRidel/Data_examples/blob/master/resources/images/allure_mobile.png)
+
+### :bookmark_tabs: [Detailed Allure report](https://jenkins.autotests.cloud/job/07-annrid-mobile/16/allure/#suites/9c4ad43dd16f189770706ba4eb417cc1/e0757b19e9eeee9a/) with test steps:
+![image](https://github.com/AnnRidel/Data_examples/blob/master/resources/images/allure_mobile_steps.png)
+
+### :bar_chart: Dashboards in [Allure TestOps](https://allure.autotests.cloud/project/563/dashboards):
+![image](https://github.com/AnnRidel/Data_examples/blob/master/resources/images/testops_mobile.png)
+
+### :clipboard: Test Cases in [Allure TestOps](https://allure.autotests.cloud/project/563/test-cases/5389?treeId=0):
+![image](https://github.com/AnnRidel/Data_examples/blob/master/resources/images/testops_mobile_steps.png)
+
+### :bookmark_tabs: [Jira](https://jira.autotests.cloud/browse/HOMEWORK-261) integration:
+![image](https://github.com/AnnRidel/Data_examples/blob/master/resources/images/jira_mobile.png)
+
+### :envelope_with_arrow: Notification about tests execution results in Telegram:
+![image](https://github.com/AnnRidel/Data_examples/blob/master/resources/images/telegram_mobile.jpg)
+
