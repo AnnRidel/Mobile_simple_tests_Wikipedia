@@ -42,7 +42,7 @@ gradle clean test -Ddevice.host=browser_stack
 allure serve build/allure-results
 ```
 
-### :gear: Running build in [Jenkins](https://jenkins.autotests.cloud/job/07-annrid-mobile/) with parameters:
+### :gear: Running build in [Jenkins](https://jenkins.autotests.cloud/job/07-annrid-mobile/):
 ![image](https://github.com/AnnRidel/Data_examples/blob/master/resources/images/jenkins_mobile.png)
 
 ### :chart_with_upwards_trend: Generated [Allure Report](https://jenkins.autotests.cloud/job/07-annrid-mobile/16/allure/) with tests execution results:
